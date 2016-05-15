@@ -61,7 +61,8 @@
 
 <p>Un proceso no solamente es el código de un programa,un proceso tiene un <strong>contador de programa</strong> el cual es un registro del computador que indica la dirección de la siguiente instrucción que será ejecutada por el proceso, <strong>Pila de proceso</strong> Esta contiene datos temporales tales como: Los parametros de las funciones, direcciones de retorno, variables locales , … , <strong>Sección de datos</strong> la cual contiene datos tales como las variables locales, Heap: Cúmulo de memoria que es la memoria que se asigna dinámicamente al proceso n tiempo de ejecución</p>
 
-<p><strong>Note</strong> que un programa por sí sólo no es un proceso, ya que este es una entidad pasiva que contiene una lista de instrucciones almacenadas en disco ( archivo ejecutable),  mientras que un proceso es una entidad activa, el cual cumple todas las características descritas anteriormente.</p>
+<p><img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_01_Process_Memory.jpg" alt="">
+<strong>Note</strong> que un programa por sí sólo no es un proceso, ya que este es una entidad pasiva que contiene una lista de instrucciones almacenadas en disco ( archivo ejecutable),  mientras que un proceso es una entidad activa, el cual cumple todas las características descritas anteriormente.</p>
 
 <p><strong>Estados del proceso</strong>
 Cuando un proceso es ejecutado este cambia de estados, los estados que todo proceso tiene por lo general son:</p>
@@ -74,7 +75,8 @@ Cuando un proceso es ejecutado este cambia de estados, los estados que todo proc
 
 <p><strong>Preparado</strong>:    El proceso está esperando ser asignado al procesador.</p>
 
-<p><strong>Terminado</strong>:    El proceso a terminado la ejecución.</p>
+<p><strong>Terminado</strong>:    El proceso a terminado la ejecución.
+<img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_02_ProcessState.jpg" alt=""></p>
 
 <p><strong>PCB ( Bloque de control de proceso )</strong>
 Cada proceso se representa en el sistema operativo mediante el PCB, entre los elementos de información que este contiene se encuentran:</p>
@@ -88,6 +90,8 @@ Cada proceso se representa en el sistema operativo mediante el PCB, entre los el
 <p><strong>Información de planificación de la CPU</strong>: Parametros de planificación como prioridad de procesos, punteros  a las colas de planificación ...</p>
 
 <p><strong>Información de gestión de memoria</strong>: Tablas de paginas , tablas de segmentos, dependiendo los mecanismos de gestión del S.O</p>
+
+<p><img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_03_PCB.jpg" alt=""></p>
 
 <h1>
 <a id="hilo" class="anchor" href="#hilo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hilo</h1>
