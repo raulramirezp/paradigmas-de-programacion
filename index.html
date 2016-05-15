@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Paradigmas de programación : Paradigmas de programación UNAL">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Paradigmas de programación</title>
+    <meta charset="UTF-8">
+    <title>Paradigmas de programación by raulramirezp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Paradigmas de programación</h1>
+      <h2 class="project-tagline">Paradigmas de programación UNAL</h2>
+      <a href="https://github.com/raulramirezp/paradigmas-de-programacion" class="btn">View on GitHub</a>
+      <a href="https://github.com/raulramirezp/paradigmas-de-programacion/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/raulramirezp/paradigmas-de-programacion/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/raulramirezp/paradigmas-de-programacion">View on GitHub</a>
-
-          <h1 id="project_title">Paradigmas de programación</h1>
-          <h2 id="project_tagline">Paradigmas de programación UNAL</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/raulramirezp/paradigmas-de-programacion/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/raulramirezp/paradigmas-de-programacion/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
+    <section class="main-content">
+      <h2>
 <a id="paradigmas-de-programación" class="anchor" href="#paradigmas-de-programaci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paradigmas de programación</h2>
 
 <p>Este sitio está dedicado a presentar diferentes <strong>paradigmas de programación</strong> y algunos tutoriales de los <strong>lenguajes de programación</strong> más representativos de cada paradigma. </p>
@@ -57,11 +45,12 @@
 <a id="programacion-concurrente" class="anchor" href="#programacion-concurrente" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PROGRAMACION CONCURRENTE</h1>
 
 <h1>
+<a id="programación-concurrente-1" class="anchor" href="#programaci%C3%B3n-concurrente-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Programación Concurrente</h1>
+
+<h1>
 <a id="filosofía" class="anchor" href="#filosof%C3%ADa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Filosofía</h1>
 
 <p>Es la división de  un problema en subproblemas  que se solucionan de forma individual, para crear un programa o aplicación que no se vea afectada en tiempo real</p>
-
-<p><img src="http://gomechanicalkeyboard.com/wp-content/uploads/2015/09/Programming.jpg" alt=""></p>
 
 <h1>
 <a id="definición" class="anchor" href="#definici%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Definición:</h1>
@@ -78,33 +67,34 @@
 
 <p>Un proceso no solamente es el código de un programa,un proceso tiene un <strong>contador de programa</strong> el cual es un registro del computador que indica la dirección de la siguiente instrucción que será ejecutada por el proceso, <strong>Pila de proceso</strong> Esta contiene datos temporales tales como: Los parametros de las funciones, direcciones de retorno, variables locales , … , <strong>Sección de datos</strong> la cual contiene datos tales como las variables locales, Heap: Cúmulo de memoria que es la memoria que se asigna dinámicamente al proceso n tiempo de ejecución</p>
 
+<p><img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_01_Process_Memory.jpg" alt=""></p>
+
 <p><strong>Note</strong> que un programa por sí sólo no es un proceso, ya que este es una entidad pasiva que contiene una lista de instrucciones almacenadas en disco ( archivo ejecutable),  mientras que un proceso es una entidad activa, el cual cumple todas las características descritas anteriormente.</p>
 
 <p><strong>Estados del proceso</strong>
 Cuando un proceso es ejecutado este cambia de estados, los estados que todo proceso tiene por lo general son:</p>
 
-<p><strong>Nuevo</strong>:        El proceso se está creando.</p>
-
-<p><strong>Corriendo</strong>:        Se están ejecutando las instrucciones.</p>
-
-<p><strong>Espera</strong>:        El proceso está esperando que algún evento ocurra.</p>
-
-<p><strong>Preparado</strong>:    El proceso está esperando ser asignado al procesador.</p>
-
-<p><strong>Terminado</strong>:    El proceso a terminado la ejecución.</p>
+<ul>
+<li><p><strong>Nuevo</strong>:        El proceso se está creando.</p></li>
+<li><p><strong>Corriendo</strong>:        Se están ejecutando las instrucciones.</p></li>
+<li><p><strong>Espera</strong>:        El proceso está esperando que algún evento ocurra.</p></li>
+<li><p><strong>Preparado</strong>:    El proceso está esperando ser asignado al procesador.</p></li>
+<li><p><strong>Terminado</strong>:    El proceso a terminado la ejecución.
+<img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_02_ProcessState.jpg" alt=""></p></li>
+</ul>
 
 <p><strong>PCB ( Bloque de control de proceso )</strong>
 Cada proceso se representa en el sistema operativo mediante el PCB, entre los elementos de información que este contiene se encuentran:</p>
 
-<p><strong>Estado del proceso</strong>:  New, ready, running, waiting, halted, ...</p>
+<ul>
+<li><p><strong>Estado del proceso</strong>:  New, ready, running, waiting, halted, ...</p></li>
+<li><p><strong>Contador del programa</strong>: </p></li>
+<li><p><strong>Registros de la CPU</strong>:    Estos varían en cuanto a número y tipo dependiendo  de la arquitectura del procesador</p></li>
+<li><p><strong>Información de planificación de la CPU</strong>: Parametros de planificación como prioridad de procesos, punteros  a las colas de planificación ...</p></li>
+<li><p><strong>Información de gestión de memoria</strong>: Tablas de paginas , tablas de segmentos, dependiendo los mecanismos de gestión del S.O</p></li>
+</ul>
 
-<p><strong>Contador del programa</strong>: </p>
-
-<p><strong>Registros de la CPU</strong>:    Estos varían en cuanto a número y tipo dependiendo  de la arquitectura del procesador</p>
-
-<p><strong>Información de planificación de la CPU</strong>: Parametros de planificación como prioridad de procesos, punteros  a las colas de planificación ...</p>
-
-<p><strong>Información de gestión de memoria</strong>: Tablas de paginas , tablas de segmentos, dependiendo los mecanismos de gestión del S.O</p>
+<p><img src="https://www.cs.uic.edu/%7Ejbell/CourseNotes/OperatingSystems/images/Chapter3/3_03_PCB.jpg" alt=""></p>
 
 <h1>
 <a id="hilo" class="anchor" href="#hilo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hilo</h1>
@@ -234,10 +224,84 @@ Es importante resaltar que los procesos nunca corren en paralelo en el procesado
 </ul>
 
 <h1>
+<a id="aplicaciones" class="anchor" href="#aplicaciones" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aplicaciones</h1>
+
+<ol>
+<li>Servidores Web</li>
+<li>Sistema multimedia</li>
+<li>Calculo numerico</li>
+<li>Interaccion por GUI</li>
+<li>Sistemas gestores de bases de datos</li>
+<li>Sistemas Operativos</li>
+</ol>
+
+<h1>
 <a id="lenguajes" class="anchor" href="#lenguajes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lenguajes</h1>
 
 <ul>
-<li>Ejemplos semaforo en <strong>C</strong>: EL siguiente codigo fuente solo sirve sistemas operativos basado en unix.</li>
+<li>Ejemplo en <strong>python</strong>: Este es un pequeño ejemplo con el fin de ilustrar como podemos lanzar un hilo en python</li>
+</ul>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> threading <span class="pl-k">import</span> Thread
+<span class="pl-k">import</span> time
+
+<span class="pl-k">def</span> <span class="pl-en">say_hello</span>(<span class="pl-smi">name</span>):
+    <span class="pl-c1">print</span> (name, <span class="pl-s"><span class="pl-pds">"</span>Hola<span class="pl-pds">"</span></span>)
+
+t <span class="pl-k">=</span> Thread(<span class="pl-v">target</span><span class="pl-k">=</span>say_hello, <span class="pl-v">args</span><span class="pl-k">=</span>(<span class="pl-s"><span class="pl-pds">"</span>world<span class="pl-pds">"</span></span>,))
+t.start()
+t.join()</pre></div>
+
+<p><strong>Ejecucion:</strong> python archivo.py</p>
+
+<blockquote>
+<p>('world', 'Hola')</p>
+</blockquote>
+
+<ul>
+<li>Ejemplo en <em>GO</em>: En este ejemplo podemos visualizar que los hilos no se ejecutan en el orden ascedente si no esto lo decide el scheduler del sistema operativo</li>
+</ul>
+
+<div class="highlight highlight-source-go"><pre><span class="pl-k">package</span> main
+
+<span class="pl-k">import</span> (
+    <span class="pl-s"><span class="pl-pds">"</span>fmt<span class="pl-pds">"</span></span>
+    <span class="pl-s"><span class="pl-pds">"</span>time<span class="pl-pds">"</span></span>
+)
+
+<span class="pl-k">const</span> <span class="pl-v">FINAL</span> = <span class="pl-c1">100</span> * time.<span class="pl-smi">Millisecond</span>
+
+<span class="pl-k">func</span> <span class="pl-en">saluda</span>(<span class="pl-v">i</span> <span class="pl-v">int</span>) {
+    time.<span class="pl-c1">Sleep</span>(<span class="pl-c1">10</span> * time.<span class="pl-c1">Duration</span>(i%<span class="pl-c1">5</span>) * time.<span class="pl-smi">Millisecond</span> )
+    fmt.<span class="pl-c1">Println</span>(<span class="pl-s"><span class="pl-pds">"</span>Hola a todos<span class="pl-pds">"</span></span>, i)
+}
+
+<span class="pl-k">func</span> <span class="pl-en">main</span>() {
+    <span class="pl-k">for</span> <span class="pl-smi">i</span> <span class="pl-k">:=</span> <span class="pl-c1">1</span>; i &lt;= <span class="pl-c1">6</span>; i++ {
+        <span class="pl-c">// Lanzamos nuestro hilo solo anteponiendo la palabra go a la funcion</span>
+        <span class="pl-k">go</span> <span class="pl-c1">saluda</span>(i)
+    }
+    time.<span class="pl-c1">Sleep</span>(FINAL)
+}</pre></div>
+
+<p><strong>Ejecucion:</strong> go run archivo.go</p>
+
+<blockquote>
+<p>Hola a todos 5</p>
+
+<p>Hola a todos 6</p>
+
+<p>Hola a todos 1</p>
+
+<p>Hola a todos 2</p>
+
+<p>Hola a todos 3</p>
+
+<p>Hola a todos 4</p>
+</blockquote>
+
+<ul>
+<li>Ejemplos semaforo en <strong>C</strong>: El siguiente codigo fuente solo sirve sistemas operativos basado en unix.</li>
 </ul>
 
 <div class="highlight highlight-source-c"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>stdlib.h<span class="pl-pds">&gt;</span></span>
@@ -367,20 +431,41 @@ vector&lt;<span class="pl-k">double</span>&gt; <span class="pl-en">valorCal</spa
 <p>EL valor de pi es:    3.14159265258921038821</p>
 </blockquote>
 
+<h1>
+<a id="referencias" class="anchor" href="#referencias" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Referencias</h1>
+
+<ul>
+<li><a href="https://go-tour-es.appspot.com/#1">https://go-tour-es.appspot.com/#1</a></li>
+<li><a href="https://geekytheory.com/concurrencia-en-javascript/">https://geekytheory.com/concurrencia-en-javascript/</a></li>
+<li><a href="http://www.ctr.unican.es/asignaturas/procodis_3_ii/doc/procodis_3_01.pdf">http://www.ctr.unican.es/asignaturas/procodis_3_ii/doc/procodis_3_01.pdf</a></li>
+<li><a href="http://www.genbetadev.com/python/multiprocesamiento-en-python-threads-a-fondo-introduccion">http://www.genbetadev.com/python/multiprocesamiento-en-python-threads-a-fondo-introduccion</a></li>
+<li><a href="http://www.ctr.unican.es/asignaturas/procodis_3_ii/doc/procodis_1_01.pdf">http://www.ctr.unican.es/asignaturas/procodis_3_ii/doc/procodis_1_01.pdf</a></li>
+<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/lecture-notes-and-video/l4-introduction-to-concurrent-programming/">http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/lecture-notes-and-video/l4-introduction-to-concurrent-programming/</a></li>
+<li><a href="https://sites.google.com/a/unal.edu.co/sistemas-operativos/">https://sites.google.com/a/unal.edu.co/sistemas-operativos/</a></li>
+<li><a href="https://www.fing.edu.uy/tecnoinf/mvd/cursos/so/material/teo/so07-concurrencia.pdf">https://www.fing.edu.uy/tecnoinf/mvd/cursos/so/material/teo/so07-concurrencia.pdf</a></li>
+<li>Abraham Silberschatz-Operating System Concepts (9th,2012.12)</li>
+</ul>
+
+<h1>
+<a id="intregrantes" class="anchor" href="#intregrantes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intregrantes</h1>
+
+<ul>
+<li>Jhon Emmanuel Torres</li>
+<li>Raul Ramirez Penagos</li>
+<li>Diego Rodriguez</li>
+</ul>
+
 <h4>
 <a id="programación-orientada-a-aspectos" class="anchor" href="#programaci%C3%B3n-orientada-a-aspectos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Programación Orientada a Aspectos</h4>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Paradigmas de programación maintained by <a href="https://github.com/raulramirezp">raulramirezp</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/raulramirezp/paradigmas-de-programacion">Paradigmas de programación</a> is maintained by <a href="https://github.com/raulramirezp">raulramirezp</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
